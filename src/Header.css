@@ -1,0 +1,94 @@
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: "Tajawal", sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #28a745;
+  color: white;
+  padding: 0px 10px;
+}
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.logo h1 {
+  margin: 10px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.nav-links ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #e1e2e4;
+  transform: scale(1.1);
+}
+
+.theme-toggle {
+  border: none;
+}
+
+body.dark {
+  background-color: #1e2428;
+  color: #f5f5f5;
+}
+
+.header.dark {
+  background-color: #1e2428;
+  color: #f1f1f1;
+}
+
+.nav-links a {
+  color: white;
+}
+
+body.dark .nav-links a {
+  color: #f5f5f5;
+}
+
+body.dark .nav-links a:hover {
+  color: #28a745;
+}
+
+body.dark input,
+body.dark select {
+  background-color: #2c2f34;
+  color: #ffffff;
+  border: 1px solid #777;
+}
+
+body.dark input:focus,
+body.dark select:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}

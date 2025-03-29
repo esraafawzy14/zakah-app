@@ -1,0 +1,278 @@
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .ayah {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    max-width: 500px;
+  }
+  
+  .zk1 {
+    padding: 10px;
+    text-align: center;
+    max-width: 500px;
+  }
+  
+  .zk-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 91vh;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .zk-fitr {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 15px;
+  }
+  
+  .zk-fitr1 {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .zk2 {
+    margin: 15px;
+    font-size: 14px;
+  }
+  
+  .zk-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .zk-button {
+    text-align: center;
+    margin-top: 15px;
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+  }
+  
+  .zk-btn1,
+  .zk-btn {
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  
+  .zk-btn1:hover,
+  .zk-btn:hover {
+    background-color: #1e7e34;
+    transform: scale(1.05);
+  }
+  
+  .zk-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .zk-btn {
+    width: 300px;
+  }
+  
+  .zk-money {
+    width: 500px;
+    height: 500px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .zk-ani2 {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .ani2 {
+    color: #28a745;
+    align-items: center;
+  }
+  
+  hr {
+    color: #28a745;
+    width: 100%;
+    max-width: 800px;
+    height: 2px;
+    margin: 20px 0;
+  }
+  
+  .zk-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.7rem;
+    font-weight: 600;
+    font-size: 16px;
+    color: #333;
+    gap: 10px;
+  }
+  
+  .zk-label-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    color: #1e7f4c;
+  }
+  
+  
+  .zk-select,
+  input {
+    width: 100%;  
+    max-width: 450px;  
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+    background-color: white;
+    margin: 10px 0;
+  }
+  
+  .zk-select:focus,
+  input:focus {
+    outline: none;
+    border-color: #1e7f4c;
+    box-shadow: 0 0 0 3px rgba(30, 127, 76, 0.2);
+  }
+  
+  .zk-inputs1
+   {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .zk-inputs2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .zk-error {
+    color: #e53935;
+    font-size: 14px;
+    margin: 10px 0;
+    text-align: center;
+    width: 90%;
+  }
+  
+  @media (max-width: 768px) {
+    .zk-container {
+      height: auto;
+      padding: 20px;
+    }
+  
+    .zk-fitr {
+      width: 100%;
+      height: auto;
+      padding: 15px;
+    }
+  
+    .zk-fitr1 {
+      font-size: 20px;
+    }
+  
+    .zk2 {
+      font-size: 13px;
+      text-align: center;
+    }
+  
+    .zk-inputs,
+    .zk-inputs1 {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .zk-select,
+    input {
+      width: 90%;
+      max-width: 100%; 
+      height: 40px;
+    }
+  
+    .zk-btn1 {
+      height: 45px;
+      font-size: 14px;
+    }
+  
+    .zk-money {
+      width: 100%;
+      max-width: 450px;
+      height: auto;
+    }
+  
+    hr {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .zk-fitr1 {
+      font-size: 18px;
+    }
+  
+    .zk2 {
+      font-size: 12px;
+      margin: 10px;
+    }
+  
+    .zk-btn1 {
+      height: 40px;
+      font-size: 12px;
+    }
+  
+    .zk-button {
+      gap: 10px;
+    }
+  
+    .zk-button h3 {
+      font-size: 14px;
+      margin: 5px 0;
+      text-align: start;
+    }
+  
+    .zk-button p {
+      font-size: 12px;
+    }
+  
+    
+    .zk-select,
+    input {
+      width: 100%;
+      height: 38px;
+    }
+  }
+  
